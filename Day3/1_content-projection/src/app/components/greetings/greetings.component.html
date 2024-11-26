@@ -1,0 +1,20 @@
+<!-- <h2 class="text-success">Hello, {{name}}</h2> -->
+
+<!-- <div>
+    <h2 class="text-success">Hello, {{name}}</h2>
+    <ng-content></ng-content>
+</div> -->
+
+<!-- <div>
+    <ng-content select="h3"></ng-content>
+    <h2 class="text-success">Hello, {{name}}</h2>
+</div> -->
+
+<div>
+    <ng-content select="h3"></ng-content>
+    <h2 class="text-success">Hello, {{name}}</h2>
+    <ng-content select=".btn"></ng-content>
+    <hr>
+    <ng-content></ng-content>
+    <hr>
+</div>

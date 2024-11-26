@@ -1,0 +1,20 @@
+<div class="card card-primary">
+    <div class="card-header">
+        <h4>Assignment Two</h4>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <label for="itemSelection">Select list:</label>
+            <select class="form-select mt-3" id="itemSelection" [(ngModel)]="selected">
+                <option value="">Please select...</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+    </div>
+    <!-- <div class="card-footer" [ngStyle]="{'background-color':selected}"> -->
+    <div class="card-footer" [style.background]="selected">
+        <h4 [ngStyle]="{'color': selected ? 'white' : ''}">Selected: {{selected}}</h4>
+    </div>
+</div>

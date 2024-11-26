@@ -1,0 +1,10 @@
+npm i -D webpack webpack-cli
+npm i lodash
+
+From Terminal to run Webpack Build use
+npx webpack
+
+To use the app,
+
+1. npm i
+2. npx webpack

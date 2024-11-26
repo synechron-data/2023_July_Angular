@@ -1,0 +1,58 @@
+<!-- <ul class="list-group">
+    <ng-template ngFor let-person [ngForOf]="personList">
+        <li class="list-group-item">
+            <a href="#">{{person}}</a>
+        </li>
+    </ng-template>
+</ul> -->
+
+<!-- <ul class="list-group">
+    <li class="list-group-item" *ngFor="let person of personList">
+        <a href="#">{{person}}</a>
+    </li>
+</ul> -->
+
+<!-- <div class="list-group-item" *ngFor="let person of personList">
+    <a href="#">{{person}}</a>
+</div> -->
+
+<!-- Can't have multiple template bindings on one element. Use only one attribute prefixed with * -->
+<!-- <div class="list-group-item" *ngIf="personList" *ngFor="let person of personList">
+    <a href="#">{{person}}</a>
+</div> -->
+
+<!-- <div *ngIf="personList">
+    <div class="list-group-item" *ngFor="let person of personList">
+        <a href="#">{{person}}</a>
+    </div>
+</div> -->
+
+<!-- <ng-container *ngIf="personList">
+    <div class="list-group-item" *ngFor="let person of personList">
+        <a href="#">{{person}}</a>
+    </div>
+</ng-container> -->
+
+<!-- ----------------------------------------------------- -->
+<!-- <ul class="list-group">
+    <li class="list-group-item" *ngFor="let person of personList">
+        <a href="#" (click)="select(person)">{{person}}</a>
+    </li>
+</ul>
+
+<hr>
+<h3 class="text-primary">Selected: {{selected}}</h3> -->
+
+<!-- ----------------------------------------------------- -->
+<ul class="list-group">
+    <!-- <li class="list-group-item" *ngFor="let person of personList" highlight> -->
+    <!-- <li class="list-group-item" *ngFor="let person of personList" highlight highlightColor="{{'skyblue'}}"> -->
+    <!-- <li class="list-group-item" *ngFor="let person of personList" highlight bind-highlightColor="'skyblue'"> -->
+    <!-- <li class="list-group-item" *ngFor="let person of personList" highlight [highlightColor]="'lightgreen'"> -->
+    <li class="list-group-item" *ngFor="let person of personList" [highlight]="'lightgreen'">
+        <a href="https://www.google.com" (click)="select(person, $event)">{{person}}</a>
+    </li>
+</ul>
+
+<hr>
+<h3 class="text-primary">Selected: {{selected}}</h3>

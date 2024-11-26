@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/manish-sync-pnq-jul23",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  }
+}
